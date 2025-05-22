@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background: #fefdfb;
+  color: #1c2a39;
+}
+
+header.nav {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header.nav .logo {
+  font-weight: 800;
+  font-size: 1.8rem;
+}
+header.nav .logo span {
+  color: #95d5b2;
+}
+header.nav .nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+header.nav .nav-links a {
+  text-decoration: none;
+  color: #1c2a39;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+header.nav .nav-links a:hover {
+  color: #95d5b2;
+}
+header.nav .auth-links {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+header.nav .auth-links .signin {
+  text-decoration: none;
+  color: #1c2a39;
+  font-weight: 500;
+}
+header.nav .auth-links .signup {
+  background: #1c2a39;
+  color: #fff;
+  padding: 0.6rem 1.4rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+header.nav .auth-links .signup:hover {
+  background: rgb(11.2, 16.8, 22.8);
+}
+
+.hero {
+  max-width: 1200px;
+  margin: auto;
+  padding: 3rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  /* Testimonios */
+}
+.hero .hero-content {
+  flex: 1;
+  padding-right: 2rem;
+}
+.hero .hero-content h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  color: #1c2a39;
+}
+.hero .hero-content p {
+  color: #6c6c6c;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+.hero .hero-content .hero-buttons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+.hero .hero-content .hero-buttons .btn-primary {
+  background: #1c2a39;
+  color: white;
+  padding: 0.8rem 2rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+.hero .hero-content .hero-buttons .btn-primary:hover {
+  background: rgb(11.2, 16.8, 22.8);
+}
+.hero .hero-content .hero-buttons .video-btn {
+  color: #1c2a39;
+  text-decoration: none;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.hero .hero-content .hero-buttons .video-btn:hover {
+  opacity: 0.7;
+}
+.hero .hero-content .features {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.hero .hero-content .features .feature-box {
+  text-align: center;
+}
+.hero .hero-content .features .feature-box img {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 1rem;
+}
+.hero .hero-content .features .feature-box h3 {
+  font-size: 1.5rem;
+  color: #1c2a39;
+  margin-bottom: 0.3rem;
+}
+.hero .hero-content .features .feature-box p {
+  color: #6c6c6c;
+  font-size: 0.9rem;
+}
+.hero .hero-image {
+  position: relative;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+}
+.hero .hero-image img {
+  width: 100%;
+  max-width: 380px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 1rem;
+  display: block;
+  z-index: 1;
+  position: relative;
+}
+.hero .testimonial {
+  position: absolute;
+  background: #e8f9f3;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  max-width: 270px;
+  font-size: 0.9rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  line-height: 1.5;
+  z-index: 2;
+}
+.hero .testimonial.top {
+  top: 5%;
+  right: 5%;
+}
+.hero .testimonial.bottom {
+  bottom: 5%;
+  left: 5%;
+}
+.hero .testimonial span {
+  display: block;
+  margin-top: 0.8rem;
+  font-weight: bold;
+  color: #1c2a39;
+}
+
+/*# sourceMappingURL=style.css.map */

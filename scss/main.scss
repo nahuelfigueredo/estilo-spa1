@@ -1,0 +1,225 @@
+// ==== VARIABLES ====
+$font: 'Plus Jakarta Sans', sans-serif;
+$primary: #1c2a39;
+$accent: #95d5b2;
+$bg: #fefdfb;
+$text-gray: #6c6c6c;
+
+// ==== RESET ====
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font;
+  background: $bg;
+  color: $primary;
+}
+
+// ==== HEADER ====
+header.nav {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo {
+    font-weight: 800;
+    font-size: 1.8rem;
+
+    span {
+      color: $accent;
+    }
+  }
+
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+
+    a {
+      text-decoration: none;
+      color: $primary;
+      font-weight: 500;
+      transition: color 0.3s;
+
+      &:hover {
+        color: $accent;
+      }
+    }
+  }
+
+  .auth-links {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+
+    .signin {
+      text-decoration: none;
+      color: $primary;
+      font-weight: 500;
+    }
+
+    .signup {
+      background: $primary;
+      color: #fff;
+      padding: 0.6rem 1.4rem;
+      border-radius: 2rem;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background 0.3s;
+
+      &:hover {
+        background: darken($primary, 10%);
+      }
+    }
+  }
+}
+
+// ==== HERO ====
+.hero {
+  max-width: 1200px;
+  margin: auto;
+  padding: 3rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  .hero-content {
+    flex: 1;
+    padding-right: 2rem;
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+      color: $primary;
+    }
+
+    p {
+      color: $text-gray;
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+    }
+
+    .hero-buttons {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 3rem;
+
+      .btn-primary {
+        background: $primary;
+        color: white;
+        padding: 0.8rem 2rem;
+        border-radius: 2rem;
+        text-decoration: none;
+        font-weight: 500;
+        transition: background 0.3s;
+
+        &:hover {
+          background: darken($primary, 10%);
+        }
+      }
+
+      .video-btn {
+        color: $primary;
+        text-decoration: none;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+
+    .features {
+      display: flex;
+      gap: 2rem;
+      margin-top: 2rem;
+
+      .feature-box {
+        text-align: center;
+
+        img {
+          width: 48px;
+          height: 48px;
+          margin-bottom: 1rem;
+        }
+
+        h3 {
+          font-size: 1.5rem;
+          color: $primary;
+          margin-bottom: 0.3rem;
+        }
+
+        p {
+          color: $text-gray;
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+
+ .hero-image {
+  position: relative;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 380px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 1rem;
+  display: block;
+  z-index: 1;
+  position: relative;
+}
+
+/* Testimonios */
+.testimonial {
+  position: absolute;
+  background: #e8f9f3;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  max-width: 270px;
+  font-size: 0.9rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  line-height: 1.5;
+  z-index: 2;
+}
+
+.testimonial.top {
+  top: 5%;
+  right: 5%;
+}
+
+.testimonial.bottom {
+  bottom: 5%;
+  left: 5%;
+}
+
+.testimonial span {
+  display: block;
+  margin-top: 0.8rem;
+  font-weight: bold;
+  color: #1c2a39;
+}
+
+
+    }
+  
